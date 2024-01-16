@@ -1,9 +1,11 @@
 <template>
-<div>
-    <b-container>
-        <b-breadcrumb :items="items"></b-breadcrumb>
-    </b-container>
-</div>
+ 
+  <b-container>
+    <p class="text-center">
+   apoco si pinche prieto Main
+  </p>
+     <b-breadcrumb :items="items"></b-breadcrumb>
+ </b-container>
 </template>
 
 <script>
@@ -13,7 +15,7 @@ export default {
         items: [
           {
             text: 'Inicio',
-            active:true
+            to: {name:'inicio'}
           },
           {
             text: 'Tercero',
@@ -21,8 +23,8 @@ export default {
           },
           {
             text: 'Main',
-            to: {name:'main'}
-          },
+            to: {name: 'main'}
+          }
         ]
       }
     }
