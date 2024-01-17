@@ -1,35 +1,40 @@
 <template>
- 
-  <b-container>
-         <p class="text-center">apocosi pinche prieto Tercero</p>
-         <b-breadcrumb :items="items"></b-breadcrumb>
-    </b-container>
-</template>
-
-<script>
-export default {
-    data() {
-      return {
-        items: [
+  <div>
+      <b-container>
+          <b-breadcrumb :items="items"></b-breadcrumb>
+          <b-breadcrumb :items="items2"></b-breadcrumb>
+      </b-container>
+  </div>
+  </template>
+  
+  <script>
+  export default {
+      data() {
+        return {
+          items2:[
           {
-            text: 'Inicio',
-            to: {name:'inicio'}
-          },
-          {
-            text: 'Tercero',
-            active:"true"
-          },
-          {
-            text: 'Main',
-            to: {name: 'main'}
-          }
-        ]
+              text: 'Inicio',
+              to:{name:'inicio'}
+            },
+            {
+              text: 'Rentar tu espacio',
+              to: {name:'rentarEspacio'}
+            },
+            {
+              text: 'catalogo de espacios',
+              to: {name:'catalogoEspacios'}
+            },
+            {
+              text: 'detalles de espacios',
+              active:true
+            },
+          ]
+        }
       }
     }
-  }
-
-</script>
-
-<style>
-
-</style>
+  
+  </script>
+  
+  <style>
+  
+  </style>
