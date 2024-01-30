@@ -2,6 +2,7 @@
   <div class="container">
     <b-container>
         <b-breadcrumb :items="items"></b-breadcrumb>
+        <b-breadcrumb :items="items2"></b-breadcrumb>
     </b-container>
 
     <form @submit.prevent="submitForm" class="form">
@@ -48,11 +49,11 @@ export default {
       items: [
           {
             text: 'Inicio',
-            to: {name:'inicio'}
+            active:true
           },
           {
-            text: 'Tercero',
-            to: {name:'tercero'}
+            text: 'Renta tu espacio',
+            to: {name:'rentaEspacio'}
           },
           {
             text: 'Main',

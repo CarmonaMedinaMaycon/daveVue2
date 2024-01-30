@@ -25,14 +25,34 @@ const routes =[
                 component:()=> import('../components/Inicio.vue')
             },
             {
-                path:'/tercero',
-                name:'tercero',
-                component:()=> import('../components/Tercero.vue')
+                path:'/rentaEspacio',
+                name:'rentaEspacio',
+                component:()=> import('../components/RentaEspecio.vue')
             },
             {
-                path:'/main',
-                name:'main',
-                component:()=> import('../components/Main.vue')
+                path:'/informacionEspacio',
+                name:'informacionEspacio',
+                component:()=> import('../components/InformacionEspacio.vue')
+            },
+            {
+                path:'/ofertaEspacio',
+                name:'ofertarEspacio',
+                component:()=> import('../components/OfertarEspacio.vue')
+            },
+            {
+                path:'/rentarEspacio',
+                name:'rentarEspacio',
+                component:()=> import('../components/RentarEspacio.vue')
+            },
+            {
+                path:'/catalogoEspacios',
+                name:'catalogoEspacios',
+                component:()=> import('../components/CatalogoEspacio.vue')
+            },
+            {
+                path:'/detallesEspacio',
+                name:'detallesEspacio',
+                component:()=> import('../components/DetallesEspacio.vue')
             }
         ]
     }
